@@ -1,0 +1,10 @@
+class: OrderItem
+table: order_item
+fields:
+  orderId: int, relation(parent=shop_order, onDelete=Cascade)
+  productId: int, relation(parent=product, onDelete=Restrict)
+  quantity: int
+  price: double
+indexes:
+  order_item_order_idx:
+    fields: orderId

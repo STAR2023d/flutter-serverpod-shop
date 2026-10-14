@@ -1,0 +1,26 @@
+admin:
+  - isAdmin:
+  - myUserId:
+  - listAllProducts:
+  - saveProduct:
+  - deleteProduct:
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+  - hasAccount:
+refreshJwtTokens:
+  - refreshAccessToken:
+order:
+  - createOrder:
+  - myOrders:
+payment:
+  - startMpesaPayment:
+  - getPaymentStatus:
+product:
+  - listProducts:
+  - getProduct:

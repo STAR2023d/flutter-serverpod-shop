@@ -1,0 +1,19 @@
+class: MpesaPayment
+table: mpesa_payment
+fields:
+  orderId: int, relation(parent=shop_order, onDelete=Cascade)
+  phoneNumber: String
+  amount: int
+  merchantRequestId: String?
+  checkoutRequestId: String?
+  status: PaymentStatus, default=pending
+  mpesaReceiptNumber: String?
+  resultCode: int?
+  resultDesc: String?
+  createdAt: DateTime, default=now
+indexes:
+  mpesa_payment_checkout_idx:
+    fields: checkoutRequestId
+    unique: true
+  mpesa_payment_order_idx:
+    fields: orderId

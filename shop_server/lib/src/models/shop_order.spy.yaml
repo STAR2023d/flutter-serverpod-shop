@@ -1,0 +1,10 @@
+class: ShopOrder
+table: shop_order
+fields:
+  userId: UuidValue
+  totalAmount: double
+  status: OrderStatus, default=pending
+  createdAt: DateTime, default=now
+indexes:
+  shop_order_user_idx:
+    fields: userId

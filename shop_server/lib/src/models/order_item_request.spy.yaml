@@ -1,0 +1,4 @@
+class: OrderItemRequest
+fields:
+  productId: int
+  quantity: int

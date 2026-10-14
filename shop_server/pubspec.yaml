@@ -1,0 +1,16 @@
+name: shop_server
+description: Serverpod backend for the online shop.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: "^3.12.2"
+
+dependencies:
+  serverpod: 4.0.4
+  serverpod_auth_idp_server: 4.0.4
+  mailer: ^6.0.0
+  http: ^1.2.0
+
+dev_dependencies:
+  lints: ^6.0.0

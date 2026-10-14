@@ -1,0 +1,13 @@
+class: Product
+table: product
+fields:
+  name: String
+  description: String
+  price: double
+  stock: int
+  imageUrl: String?
+  metadata: Map<String, String>?, serializationDataType=jsonb
+  isActive: bool, default=true
+indexes:
+  product_name_idx:
+    fields: name

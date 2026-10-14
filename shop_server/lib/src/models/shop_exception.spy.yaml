@@ -1,0 +1,3 @@
+exception: ShopException
+fields:
+  message: String
